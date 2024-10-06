@@ -1,0 +1,47 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+.quill-editer {
+  height: 12rem;
+}
+
+.ql-container {
+  background-color: #fff;
+  height: calc(100% - 44px) !important;
+}
+
+.ql-tooltip {
+  left: 0.4792px !important;
+  top: 22.287px !important;
+}
+
+.ql-editor p img {
+}
+
+.task-list {
+  max-height: calc(100% - 144px);
+}
+
+.edit-pencil {
+  display: none;
+}
+
+.item-title:hover .edit-pencil {
+  display: block;
+}
+
+.task-list .content {
+  /* margin-top: 42px; */
+}

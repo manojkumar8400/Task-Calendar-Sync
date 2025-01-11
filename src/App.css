@@ -27,11 +27,38 @@ body {
   top: 22.287px !important;
 }
 
+.ql-editor {
+  padding: 10px 8px !important;
+}
+
 .ql-editor p img {
 }
 
 .task-list {
-  max-height: calc(100% - 144px);
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+}
+
+.task-list {
+  max-height: calc(100% - 160px);
+  height: 100%;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker-ignore-onclickoutside,
+.react-datepicker__input-container input {
+  width: 100%;
+  outline: none !important;
+  text-align: center;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: flex !important;
+}
+
+.react-datepicker-popper {
+  z-index: 20 !important;
 }
 
 .edit-pencil {
@@ -42,6 +69,34 @@ body {
   display: block;
 }
 
-.task-list .content {
-  /* margin-top: 42px; */
+.grid-column {
+  display: grid;
+  grid-template-columns: 3rem 1fr 10rem 10rem 10rem 10rem 10rem;
+}
+
+.dropdown-container div:nth-child(odd){
+  background-color: #fff;
+}
+
+.dropdown-container div:nth-child(even){
+  background-color: #c9c9c9;
+}
+
+.delete-btn {
+  all: unset;
+}
+
+.delete-btn:disabled {
+  cursor: not-allowed !important;	
+}
+
+.filter-item:hover .filter-subItem{
+  display: block !important;
+}
+
+.filter-subItem {
+  top: 0;
+  left: 208px;
+  background-color: #fff;
+
 }
